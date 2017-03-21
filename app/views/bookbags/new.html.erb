@@ -1,0 +1,20 @@
+<h1>New Bookbag:</h1>
+<%= form_tag "/bookbags", method: :post do %>
+  <div>
+    Name: <input type="text" class="form-control" name="name">
+  </div>
+  <div>
+    Image (URL): <input type="text" class="form-control" name="image">
+  </div>
+  <div>
+    Description: <input type="text" class="form-control" name="description">
+  </div>
+  <div>
+    Color: <input type="text" class="form-control" name="color">
+  </div>
+  <div>
+    Price: <input type="text" class="form-control" name="price">
+  </div>
+  
+  <input type="submit" value="Add Bookbag">
+<% end %>

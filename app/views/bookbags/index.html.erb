@@ -1,0 +1,16 @@
+<h2>All Bookbags: </h2>
+<p></p>
+<a href="/bookbags/new">Create new bookbag</a>
+  <% @bookbags.each do |bookbag| %>
+ <h3><a href="/bookbags/<%= bookbag.id %>"><%= bookbag.name %></a></h3>
+ <img class="bookbag-image" src="<%= bookbag.image%>" alt="<%= bookbag.name %>">
+ <h3><%= bookbag.description %></h3>
+ <h3><%= bookbag.color %></h3>
+ <h3><%= bookbag.price %></h3>
+  
+  <p><%= link_to "Edit", "/bookbags/#{bookbag.id}/edit" %>/<%= link_to "Delete", "/bookbags/#{bookbag.id}", method: :delete %></p>
+ <% end %>
+
+
+
+

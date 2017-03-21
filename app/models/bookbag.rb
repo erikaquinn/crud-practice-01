@@ -1,0 +1,2 @@
+class Bookbag < ApplicationRecord
+end

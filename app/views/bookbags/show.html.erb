@@ -1,0 +1,22 @@
+<h1>Bookbag Info:</h1>
+<p></p>
+<div class="row">
+<h2><%= @bookbag.name %></h2>
+<div class="col-md-6">
+  <div class="well">
+<img class="bookbag-image" src="<%= @bookbag.image%>" alt="<%= @bookbag.name %>">
+<h3><%= @bookbag.description %></h3>
+<h3><%= @bookbag.price %></h3>
+<h3><%= @bookbag.color %></h3>
+<p></p>
+<p><%= link_to "Edit bookbag", "/bookbags/#{@bookbag.id}/edit" %></p>
+<p><%= link_to "Create new bookbag", "/bookbags/new", method: :get %></p>
+<p><%= link_to "Destroy bookbag", "/bookbags/#{@bookbag.id}", method: :delete %></p>
+
+<p><a href="/bookbags">Back to all bookbags</a></p>
+</div>
+</div>
+</div>
+
+
+
